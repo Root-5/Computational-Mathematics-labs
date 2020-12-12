@@ -24,8 +24,8 @@ double trapezoidal_integral(double a, double b, int n)
 
 int main()
 {
-    double result = trapezoidal_integral(0, 3.14, 10);
+    double result = trapezoidal_integral(0, 2, 15);
     printf("Result: %lf\n", result);
-    printf("Diff: %lf", fabs(25.2822852863691 - result));
+    printf("Diff: %lf", fabs(8.389056098 - result));
     return 0;
 }

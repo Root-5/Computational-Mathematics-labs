@@ -27,8 +27,8 @@ double interpolaton(std::vector<double> x_vector, std::vector<double> y_vector, 
 
 int main(int argc, char const *argv[])
 {
-    double a = 0, b = 10, x = 8.1;
-    int k = 10;
+    double a = 0, b = 10, x = 1.5;
+    int k = 100;
     double h = (b - a) / (k - 1);
 
     std::vector<double> x_vector;
