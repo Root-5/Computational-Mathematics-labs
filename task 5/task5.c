@@ -76,7 +76,7 @@ int main(int argc, char* argv[]) {
     y2[0] = 1;
     for (int j = 0; j < n2 + 1; j++) {
         y2[j + 1] = y2[j] + h2 * g1_2[j];
-        //cout << "x = " << j * h2 << " y_appr = " << y2[j] << " y_real = " << g1_2[j] << endl;
+        cout << "x = " << j * h2 << " y_appr = " << y2[j] << " y_real = " << g1_2[j] << endl;
     }
 
     approx_error = n2_appr_error_exp(y2, n, h2);
@@ -86,7 +86,7 @@ int main(int argc, char* argv[]) {
     cout << endl << endl << "k = 2" << endl;
     for (int j = 2; j < n + 1; j++) {
         y[j] = y[j - 2] + h * (g1[j - 2] + g1[j]);
-        //cout << "x = " << j * h << " y_appr = " << y[j] << " y_real = " << g1[j] << endl;
+        cout << "x = " << j * h << " y_appr = " << y[j] << " y_real = " << g1[j] << endl;
     }
 
     approx_error = n_appr_error_exp(y, n, h);
@@ -130,13 +130,13 @@ int main(int argc, char* argv[]) {
     cout << "n = " << n << " appr1_error = " << approx_error << endl;
 
     y2[0] = 1;
-    for (int j = 0; j < n2 + 1; j++) {
-        y2[j + 1] = y2[j] + h2 * g2_2[j];
-        //cout << "x = " << j * h2 << " y_appr = " << y2[j] << " y_real = " << 2 - cos(j * h2) << endl;
+    for (int j = 0; j < n + 1; j++) {
+        y2[j + 1] = y2[j] + h * g2[j];
+        cout << "x = " << j * h << " y_appr = " << y2[j] << " y_real = " << 2 - cos(j * h2) << endl;
     }
     
     approx_error = n2_appr_error_sin(y2, n, h2);
-    cout << "n = " << n2 << " appr1_error = " << approx_error << endl;
+    cout << "n = " << n << " appr1_error = " << approx_error << endl;
 
 
     cout << endl << endl << "k = 2" << endl;
@@ -163,7 +163,7 @@ int main(int argc, char* argv[]) {
     //cout << "y[1] = " << y[1] << endl;
     for (int j = 2; j < n + 1; j++) {
         y[j] = y[j - 2] + h * (g2[j - 2] + 4 * g2[j - 1] + g2[j]) / 3;
-        //cout << "x = " << j * h << " y_appr = " << y[j] << " y_real = " << 2 - cos(j * h) << endl;
+        cout << "x = " << j * h << " y_appr = " << y[j] << " y_real = " << 2 - cos(j * h) << endl;
     }
 
     approx_error = n_appr_error_sin(y, n, h);
@@ -172,7 +172,7 @@ int main(int argc, char* argv[]) {
     y2[1] = (g2_2[0] + g2_2[1] + sin(h2)) * h2 / 3 + y2[0];
     for (int j = 2; j < n2 + 1; j++) {
         y2[j] = y2[j - 2] + h2 * (g2_2[j - 2] + 4 * g2_2[j - 1] + g2_2[j]) / 3;
-        //cout << "x = " << j * h << " y_appr = " << y[j] << " y_real = " << 2 - cos(j * h) << endl;
+        cout << "x = " << j * h << " y_appr = " << y[j] << " y_real = " << 2 - cos(j * h) << endl;
     }
 
     approx_error = n2_appr_error_sin(y2, n, h2);

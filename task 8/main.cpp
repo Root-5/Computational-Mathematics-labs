@@ -1,15 +1,11 @@
 #include <iostream>
+#include <ctime>
 #define N 3
 
 using namespace std;
-/**
-	 * n - число уравнений (строк матрицы)
-	 * b - диагональ, лежащая над главной (нумеруется: [0;n-2])
-	 * c - главная диагональ матрицы A (нумеруется: [0;n-1])
-	 * a - диагональ, лежащая под главной (нумеруется: [1;n-1])
-	 * f - правая часть (столбец)
-	 * x - решение, массив x будет содержать ответ
-	 */
+
+int ITERS = 0;
+
 void solveMatrix(int n, double *a, double *c, double *b, double *f, double *x)
 {
     double m;
@@ -18,6 +14,7 @@ void solveMatrix(int n, double *a, double *c, double *b, double *f, double *x)
         m = a[i] / c[i - 1];
         c[i] = c[i] - m * b[i - 1];
         f[i] = f[i] - m * f[i - 1];
+        ITERS++;
     }
 
     x[n - 1] = f[n - 1] / c[n - 1];
@@ -25,6 +22,7 @@ void solveMatrix(int n, double *a, double *c, double *b, double *f, double *x)
     for (int i = n - 2; i >= 0; i--)
     {
         x[i] = (f[i] - b[i] * x[i + 1]) / c[i];
+        ITERS++;
     }
 }
 
@@ -110,11 +108,11 @@ double *getBottomDiagonal(double matrix[N][N])
 
 int main()
 {
-
-    double matrix[N][N] = {{1, -1, 0},
-                           {1.1, 1.01, 1},
-                           {0, 1, -1}};
-    double res[N] = {1, 2, 3};
+    int start = clock();
+    double matrix[N][N] = {{1, 0.5, 0.33},
+                           {0.5, 0.33, 0.25},
+                           {0.25, 0.2, 0.16}};
+    double res[N] = {2, 2, 2};
     double *f = (double *)malloc(sizeof(double) * N);
     for (int i = 0; i < N; i++)
     {
@@ -126,13 +124,15 @@ int main()
     double *b = getUpperDiagonal(matrix);
     double *a = getBottomDiagonal(matrix);
     solveMatrix(N, a, c, b, f, x);
+    int endtime = clock();
     //PRINT X
-    cout<<"ANSWER:";
+    cout << "ANSWER:";
     for (int i = 0; i < N; i++)
     {
         cout << x[i] << " ";
     }
     cout << endl;
+    cout << "Time: " << endtime - start << endl;
     free(c);
     free(b);
     free(a);

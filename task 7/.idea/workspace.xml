@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60037ad1-0b2f-4756-968e-d8e5ab5bd873" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../task 1/task1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 2/task2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../task 2/task2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 3/task3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 4/task4.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 5/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 5/task5.c" beforeDir="false" afterPath="$PROJECT_DIR$/../task 5/task5.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 8/lu.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../task 8/lu.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 8/lu.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../task 8/lu.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 8/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../task 8/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task 8/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../task 8/main.exe" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="mwfd3gmb" />
+  </component>
+  <component name="ProjectId" id="1m3PtasbEkZqOprXD4ww9EwOWAZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60037ad1-0b2f-4756-968e-d8e5ab5bd873" name="Default Changelist" comment="" />
+      <created>1608719517131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608719517131</updated>
+      <workItem from="1608719518204" duration="47000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1608719549818">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1608719549818" />
+  </component>
+</project>
